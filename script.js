@@ -2,10 +2,10 @@ let ButtonHidedSlides = document.querySelectorAll('#hidden-slide')
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
-    if (width < 501) {
+    if (width < 768) {
         for (let i = 0; i < ButtonHidedSlides.length; i++) {
-        ButtonHidedSlides[i].classList.remove('brand-slide--invisible')
-    }
+            ButtonHidedSlides[i].classList.remove('brand-slide--invisible')
+        }
         const slider = new Swiper('.swiper-container', {
             pagination: {
                 el: '.swiper-pagination',
