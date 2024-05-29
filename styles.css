@@ -223,6 +223,7 @@
      font-size: 14px;
      background-color: var(--color-background);
      color: var(--color-gray);
+     overflow: hidden;
  }
 
 
@@ -289,7 +290,7 @@
  .swiper-slide {
      background-color: white;
      display: flex;
-     width: clamp(220px, 29.1vw, 300px);
+     width: 240px;
      height: 72px;
      justify-content: space-between;
      align-items: center;
@@ -377,6 +378,12 @@
 
 
 
+@media (min-width: 768px) {
+    .swiper-slide {
+        width: 224px
+    }
+}
+
 
  @media (min-width: 1120px) {
 
@@ -387,7 +394,8 @@
      .swiper-slide {
          background-color: white;
          display: flex;
-         width: clamp(240px, 21.43vw, 300px);
+         /* width: clamp(240px, 21.43vw, 300px); */
+         width: 240px;
      }
 
  }

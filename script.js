@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             grabCursor: true,
             slideToClickedSlide: true,
-            slidesPerView: 1.3,
+            slidesPerView: 'auto',
             spaceBetween: 16,
             freeMode: true,
 
